@@ -1,6 +1,6 @@
 {
-    "name": "Codeup-Sample-Gitbook",
-    "description": "Sample Gitbook to use as a base for additional book development",
+    "name": "Codeup-LAMP-GitBook",
+    "description": "Codeup class curriculum for learning the LAMP + JavaScript stack",
     "dependencies": {
         "gitbook": "^1.0.0",
         "gitbook-plugin-anchors": "^0.4",
@@ -10,15 +10,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/bbatsche/Sample-Gitbook.git"
+        "url": "https://github.com/gocodeup/lampj-gitbook.git"
     },
     "contributors": [
-        "Ben Batschelet <ben@codeup.com>"
+        "Chris Turner <chris@codeup.com>",
+        "Jason Straughan <jason@codeup.com>",
+        "Ben Batschelet <ben@codeup.com>",
+        "Isaac Castillo <isaac@codeup.com>",
+        "Thomas Laffoon <thomas@codeup.com>"
     ],
     "license": "Proprietary",
     "private": true,
     "bugs": {
-        "url": "https://github.com/bbatsche/Sample-Gitbook/issues"
+        "url": "https://github.com/gocodeup/lampj-gitbook/issues"
     },
-    "homepage": "https://github.com/bbatsche/Sample-Gitbook"
+    "homepage": "https://github.com/gocodeup/lampj-gitbook"
 }

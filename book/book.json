@@ -1,6 +1,6 @@
 {
-    "title": "Sample Gitbook",
-    "description": "Sample Gitbook to use as a base for additional book development",
+    "title": "Codeup LAMP+J",
+    "description": "This is the curriculum for Codeup's LAMP+J bootcamp",
     "plugins":[
         "scrollablecode",
         "toggle-chapters",
