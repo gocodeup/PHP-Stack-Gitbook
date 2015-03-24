@@ -1,4 +1,3 @@
 [submodule "book/content"]
 	path = book/content
 	url = git@github.com:gocodeup/lampj-gitbook.git
-	branch = submodule-test
