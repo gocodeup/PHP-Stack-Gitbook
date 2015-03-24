@@ -21,7 +21,6 @@
         * [Box Model](content/html-css/css-i/box-model.md)
         * [Positioning](content/html-css/css-i/positioning.md)
         * [Twitter Bootstrap](content/html-css/css-i/twitter-bootstrap.md)
-    * [Todo List Template](content/html-css/todo-list-template.md)
 * [Git](content/git/README.md)
     * [Creating a Repository](content/git/creating-a-repository.md)
     * [Initializing a Repository](content/git/initializing-a-repository.md)
