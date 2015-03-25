@@ -136,7 +136,7 @@
         * [Constructors & Destructors](content/php_iii/classes-and-objects-i/constructors-destructors.md)
         * [Static Methods & Properties](content/php_iii/classes-and-objects-i/static.md)
         * [Authentication Wrapper](content/php_iii/classes-and-objects-i/authentication.md)
-* [MySQL](content/mysql/intro-to-mysql/intro.md)
+* [MySQL](content/mysql/intro-to-mysql/index.md)
     * [Users](content/mysql/intro-to-mysql/users.md)
     * [Databases](content/mysql/intro-to-mysql/databases.md)
     * [Tables](content/mysql/intro-to-mysql/tables.md)
