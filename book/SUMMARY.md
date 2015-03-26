@@ -140,7 +140,7 @@
     * [Users](content/mysql/intro-to-mysql/users.md)
     * [Databases](content/mysql/intro-to-mysql/databases.md)
     * [Tables](content/mysql/intro-to-mysql/tables.md)
-    * [Basic Statements](content/mysql/basic-statements/readme.md)
+    * [Basic Statements](content/mysql/basic-statements/index.md)
         * [Insert](content/mysql/basic-statements/insert.md)
         * [Select](content/mysql/basic-statements/select.md)
         * [Update](content/mysql/basic-statements/update.md)
