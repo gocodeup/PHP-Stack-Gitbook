@@ -169,7 +169,7 @@ original_branch = repo.current_branch
 git_checkout(repo, options[:branch])
 
 # Build book
-system "gitbook build -o \"#{options[:build_dir]}\" -f site book"
+abort 'Failed to build book!' unless system 'gitbook', 'build', '-o', options[:build_dir], '-f', 'site', 'book'
 
 # Strip double slashes
 gitbook_css = File.join(options[:build_dir], 'gitbook', '*.css')
@@ -196,7 +196,7 @@ uploader.cleanup!
 FileUtils.remove_entry_secure options[:build_dir]
 
 # Tag with bucket name & date deployed.
-repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"))
+repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"), {:f => true})
 
 # Switch back to the original branch
 git_checkout(repo, original_branch)
