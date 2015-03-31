@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'dotenv'
+
 require 'optparse'
 require 'fileutils'
 require 'thread'
@@ -9,6 +11,9 @@ require 'bundler/setup'
 
 require 'aws-sdk'
 require 'git'
+
+# Load env values first!
+Dotenv.load
 
 # Shamelessly stolen from http://avi.io/blog/2013/12/03/upload-folder-to-s3-recursively
 # Because multithreaded upload is pretty f-ing sweet
@@ -26,7 +31,7 @@ class S3FolderUpload
   # Examples
   #   => uploader = S3FolderUpload.new("some_route/test_folder", 'your_bucket_name')
   #
-  def initialize(folder_path, bucket, aws_key = ENV['AWS_ACCESS_KEY_ID'], aws_secret = ENV['AWS_SECRET_ACCESS_KEY'])
+  def initialize(folder_path, bucket, aws_key, aws_secret)
     @folder_path       = folder_path
     @files             = Dir.glob "#{folder_path}/**/{*,.*}"
     @total_files       = files.length
@@ -99,15 +104,17 @@ end
 
 # Parse CLI Options
 options = {
-  :bucket    => nil,
-  :build_dir => 'build',
-  :threads   => 8,
-  :force     => false,
-  :branch    => 'master'
+  :bucket     => ENV['BUCKET'],
+  :build_dir  => 'build',
+  :threads    => 8,
+  :force      => false,
+  :branch     => 'master',
+  :aws_key    => ENV['AWS_KEY'],
+  :aws_secret => ENV['AWS_SECRET']
 }
 
 parser = OptionParser.new do |opts|
-  opts.on('-b', '--bucket=BUCKET', 'S3 Bucket to deploy to (REQUIRED)') do |b|
+  opts.on('-b', '--bucket=BUCKET', "S3 Bucket to deploy to (Required, default: \"#{options[:bucket]}\")") do |b|
     options[:bucket] = b
   end
 
@@ -119,12 +126,12 @@ parser = OptionParser.new do |opts|
     options[:branch] = br
   end
 
-  opts.on('-k', '--aws_key=KEY', 'AWS Upload Key (Default: $AWS_ACCESS_KEY_ID)') do |k|
-    ENV['AWS_ACCESS_KEY_ID'] = k
+  opts.on('-k', '--aws_key=KEY', "AWS Upload Key (Required, default: \"#{options[:aws_key]}\")") do |k|
+    options[:aws_key] = k
   end
 
-  opts.on('-s', '--aws_secret=SECRET', 'AWS Upload Secret (Default: $AWS_SECRET_ACCESS_KEY)') do |s|
-    ENV['AWS_SECRET_ACCESS_KEY'] = s
+  opts.on('-s', '--aws_secret=SECRET', "AWS Upload Secret (Required, default: \"#{options[:aws_secret]}\")") do |s|
+    options[:aws_secret] = s
   end
 
   opts.on('-t', '--threads=THREADS', Integer, "Number of threads to use for uploading (Default: #{options[:threads]})") do |t|
@@ -143,7 +150,7 @@ end
 
 parser.parse!
 
-if options[:bucket] == nil
+if options[:bucket] == nil || options[:aws_key] == nil || options[:aws_secret] == nil
   puts parser
   exit
 end
@@ -162,7 +169,7 @@ original_branch = repo.current_branch
 git_checkout(repo, options[:branch])
 
 # Build book
-system "gitbook build -o \"#{options[:build_dir]}\" -f site book"
+abort 'Failed to build book!' unless system 'gitbook', 'build', '-o', options[:build_dir], '-f', 'site', 'book'
 
 # Strip double slashes
 gitbook_css = File.join(options[:build_dir], 'gitbook', '*.css')
@@ -181,7 +188,7 @@ Dir.glob gitbook_css do |css|
 end
 
 # Deploy
-uploader = S3FolderUpload.new(options[:build_dir], options[:bucket])
+uploader = S3FolderUpload.new(options[:build_dir], options[:bucket], options[:aws_key], options[:aws_secret])
 uploader.upload! options[:threads]
 uploader.cleanup!
 
@@ -189,7 +196,7 @@ uploader.cleanup!
 FileUtils.remove_entry_secure options[:build_dir]
 
 # Tag with bucket name & date deployed.
-repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"))
+repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"), {:f => true})
 
 # Switch back to the original branch
 git_checkout(repo, original_branch)
