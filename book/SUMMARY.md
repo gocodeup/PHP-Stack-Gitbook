@@ -172,7 +172,7 @@
         * [Magic Methods](content/php_iv/classes-and-objects-ii/magic-methods.md)
         * [Late Static Binding](content/php_iv/classes-and-objects-ii/late-static-binding.md)
         * [Build a Model](content/php_iv/classes-and-objects-ii/build-a-model.md)
-    * [Exceptions](content/php_iv/exceptions/README.md)
+    * [Exceptions](content/php_iv/exceptions/index.md)
         * [Throwing](content/php_iv/exceptions/throwing.md)
         * [Try Catch](content/php_iv/exceptions/try-catch.md)
         * [Custom Exceptions](content/php_iv/exceptions/custom-exceptions.md)
