@@ -177,7 +177,7 @@
         * [Try Catch](content/php_iv/exceptions/try-catch.md)
         * [Custom Exceptions](content/php_iv/exceptions/custom-exceptions.md)
     * [Ad Lister Project](content/php_iv/ad-lister/README.md)
-* [Laravel](content/laravel/intro/intro-install.md)
+* [Laravel](content/laravel/intro/index.md)
     * [Fundamentals](content/laravel/intro/application-structure.md)
         * [Basic Routing](content/laravel/quickstart/basic-routing.md)
         * [Views](content/laravel/quickstart/views.md)
