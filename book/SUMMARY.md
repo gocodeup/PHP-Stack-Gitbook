@@ -5,7 +5,7 @@
     * [Page Structure](content/html-css/page-structure.md)
     * [Elements I](content/html-css/elements-i/index.md)
         * [Headings](content/html-css/elements-i/headings.md)
-        * [P And More](content/html-css/elements-i/p-and-more.md)
+        * [P And More](content/html-css/elements-i/paragraphs.md)
         * [Lists](content/html-css/elements-i/lists.md)
         * [Anchors](content/html-css/elements-i/anchors.md)
         * [Images](content/html-css/elements-i/images.md)
