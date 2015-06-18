@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [HTML and CSS](content/html-css/intro.md)
+* [HTML and CSS](content/html-css/index.md)
     * [Page Structure](content/html-css/page-structure.md)
     * [Elements I](content/html-css/elements-i/index.md)
         * [Headings](content/html-css/elements-i/headings.md)
@@ -21,7 +21,7 @@
         * [Box Model](content/html-css/css-i/box-model.md)
         * [Positioning](content/html-css/css-i/positioning.md)
         * [Twitter Bootstrap](content/html-css/css-i/twitter-bootstrap.md)
-* [Git](content/git/README.md)
+* [Git](content/git/index.md)
     * [Creating a Repository](content/git/creating-a-repository.md)
     * [Initializing a Repository](content/git/initializing-a-repository.md)
     * [Adding Files](content/git/adding-files.md)
