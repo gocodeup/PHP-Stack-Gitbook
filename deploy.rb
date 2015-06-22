@@ -11,6 +11,7 @@ require 'bundler/setup'
 
 require 'aws-sdk'
 require 'git'
+require 'mime/types'
 
 # Load env values first!
 Dotenv.load
@@ -77,8 +78,10 @@ class S3FolderUpload
           data = File.open file
 
           next if File.directory? data
+          options = { :acl => :public_read }
+          options[:content_type] ||=  MIME::Types.type_for(file).first
           obj = s3_bucket.objects[path]
-          obj.write(data, { acl: :public_read })
+          obj.write(data, options)
         end
       }
     end
