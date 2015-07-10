@@ -11,6 +11,7 @@ require 'bundler/setup'
 
 require 'aws-sdk'
 require 'git'
+require 'mime/types'
 
 # Load env values first!
 Dotenv.load
@@ -77,8 +78,10 @@ class S3FolderUpload
           data = File.open file
 
           next if File.directory? data
+          options = { :acl => :public_read }
+          options[:content_type] ||=  MIME::Types.type_for(file).first
           obj = s3_bucket.objects[path]
-          obj.write(data, { acl: :public_read })
+          obj.write(data, options)
         end
       }
     end
@@ -95,11 +98,6 @@ class S3FolderUpload
       end
     end
   end
-end
-
-# Not sure if the check is *really* necessary, but doesn't hurt
-def git_checkout(repo, branch_name)
-  repo.branches[branch_name].checkout unless repo.branches[branch_name].current
 end
 
 # Parse CLI Options
@@ -158,15 +156,15 @@ end
 # Make sure repository is clean before doing build
 repo = Git.open '.'
 
+# Save previous branch and checkout specified branch from options
+original_branch = repo.current_branch
+repo.checkout(options[:branch])
+
 unless options[:force]
   [:added, :changed, :deleted, :untracked].each do |s|
     abort 'Repository status is not clean!' unless repo.status.send(s).empty?
   end
 end
-
-# Save previous branch and checkout specified branch from options
-original_branch = repo.current_branch
-git_checkout(repo, options[:branch])
 
 # Build book
 abort 'Failed to build book!' unless system 'gitbook', 'build', '-o', options[:build_dir], '-f', 'site', 'book'
@@ -199,4 +197,4 @@ FileUtils.remove_entry_secure options[:build_dir]
 repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"), {:f => true})
 
 # Switch back to the original branch
-git_checkout(repo, original_branch)
+repo.checkout(original_branch)
