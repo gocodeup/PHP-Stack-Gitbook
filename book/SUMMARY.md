@@ -114,7 +114,6 @@
         * [Switch](content/php_ii/control-structures-ii/switch.md)
     * [Functions I](content/php_ii/functions-i/definition-and-syntax.md)
         * [Arguments](content/php_ii/functions-i/arguments.md)
-        * [Return](content/php_ii/functions-i/return.md)
         * [Internal Functions](content/php_ii/functions-i/internal-functions.md)
     * [Array Functions](content/php_ii/array-functions/README.md)
         * [Sorting Arrays](content/php_ii/array-functions/sorting-arrays.md)
