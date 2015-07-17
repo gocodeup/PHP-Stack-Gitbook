@@ -167,7 +167,7 @@ unless options[:force]
 end
 
 # Build book
-abort 'Failed to build book!' unless system 'gitbook', 'build', '-o', options[:build_dir], '-f', 'site', 'book'
+abort 'Failed to build book!' unless system 'gitbook', 'build', 'book', options[:build_dir], '--format', 'website'
 
 # Strip double slashes
 gitbook_css = File.join(options[:build_dir], 'gitbook', '*.css')
