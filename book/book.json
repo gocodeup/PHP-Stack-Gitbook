@@ -16,8 +16,7 @@
             "all": false
         },
         "sidebar": {
-            "Codeup": "http://www.codeup.com",
-            "Livestream": "http://www.codeup.com/live/"
+            "Codeup": "http://www.codeup.com"
         }
     }
 }
