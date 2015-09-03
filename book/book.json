@@ -18,5 +18,8 @@
         "sidebar": {
             "Codeup": "http://www.codeup.com"
         }
+    },
+    "variables": {
+        "curriculumName": "php-stack"
     }
 }
