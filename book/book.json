@@ -1,12 +1,13 @@
 {
     "title": "Sample Gitbook",
     "description": "Sample Gitbook to use as a base for additional book development",
-    "gitbook": ">=2.1.0",
+    "gitbook": ">=2.3.2",
     "plugins":[
         "scrollablecode",
         "jsbin",
         "youtubex",
-        "collapsible-menu"
+        "collapsible-menu",
+        "codepen"
     ],
     "links": {
         "sharing": {
