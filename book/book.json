@@ -1,12 +1,13 @@
 {
     "title": "Codeup LAMP+J",
     "description": "This is the curriculum for Codeup's LAMP+J bootcamp",
+    "gitbook": ">=2.3.2",
     "plugins":[
         "scrollablecode",
-        "toggle-chapters",
         "jsbin",
-        "anchors",
-        "-mathjax"
+        "youtubex",
+        "collapsible-menu",
+        "codepen"
     ],
     "links": {
         "sharing": {
@@ -16,8 +17,10 @@
             "all": false
         },
         "sidebar": {
-            "Codeup": "http://www.codeup.com",
-            "Livestream": "http://www.codeup.com/live/"
+            "Codeup": "http://www.codeup.com"
         }
+    },
+    "variables": {
+        "curriculumName": "php-stack"
     }
 }
