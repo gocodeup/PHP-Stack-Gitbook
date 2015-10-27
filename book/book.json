@@ -19,5 +19,11 @@
         "sidebar": {
             "Codeup": "http://www.codeup.com"
         }
+    },
+    "variables": {
+        "curriculumName": ""
+    },
+    "search": {
+        "maxIndexSize": 1000000000
     }
 }
