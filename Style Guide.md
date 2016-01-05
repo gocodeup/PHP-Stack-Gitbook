@@ -48,7 +48,7 @@
 
 - If a section has an intro, use that as the landing page for the section, not an empty README.
 
-- Use `index.md` for section landing pages so that URLs on rendered site are cleaner, rather than `README.md` or `intro.md`. (Note: This will probably change with Gitbook 2.0 as it can [I think] map `README.md` -> `index.html`)
+- Use `README.md` for section landing pages. GitBook will automatically rename `README.md` to `index.html` when compiling our Markdown files, and `README`s make navigating content in GitHub easier.
 
 - Correctly capitalize and camel case names. When in doubt, refer to [Wikipedia's](http://en.wikipedia.org/wiki/Main_Page) formatting.
 
@@ -80,5 +80,7 @@
 - Avoid contractions at all costs.
 
 - The main content area of GitBook is 770 pixels wide. Use that width for embedded videos to maximize seamlessness (the corresponding height is usually 578 pixels).
+
+- Be conscientious of how <code> elements (usually created by using backticks [`]) affect the readability of text in headings. A heading should never start with a <code> element. The same goes for starting a sentence with a <code> element.
 
 - Four. Spaces. Per. Indent.
