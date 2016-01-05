@@ -4,20 +4,16 @@ require 'dotenv'
 
 require 'optparse'
 require 'fileutils'
-require 'thread'
 
 require 'rubygems'
 require 'bundler/setup'
 
 require 'aws-sdk'
-require 'git'
 require 'mime/types'
 
 # Load env values first!
 Dotenv.load
 
-# Shamelessly stolen from http://avi.io/blog/2013/12/03/upload-folder-to-s3-recursively
-# Because multithreaded upload is pretty f-ing sweet
 class S3FolderUpload
   attr_reader :folder_path, :total_files, :s3_bucket
   attr_accessor :files
@@ -32,67 +28,45 @@ class S3FolderUpload
   # Examples
   #   => uploader = S3FolderUpload.new("some_route/test_folder", 'your_bucket_name')
   #
-  def initialize(folder_path, bucket, aws_key, aws_secret)
-    @folder_path       = folder_path
-    @files             = Dir.glob "#{folder_path}/**/{*,.*}"
-    @total_files       = files.length
-    @connection        = AWS::S3.new(access_key_id: aws_key, secret_access_key: aws_secret)
-    @s3_bucket         = @connection.buckets[bucket]
+  def initialize(folder_path, bucket, aws_key = ENV['AWS_ACCESS_KEY_ID'], aws_secret = ENV['AWS_SECRET_ACCESS_KEY'])
+    @folder_path = folder_path
+    @files       = Dir.glob "#{@folder_path}/**/{*,.*}"
+    @connection  = Aws::S3::Resource.new(access_key_id: aws_key, secret_access_key: aws_secret, region: 'us-east-1')
+    @s3_bucket   = @connection.bucket(bucket)
   end
 
   # public: Upload files from the folder to S3
-  #
-  # thread_count - How many threads you want to use (defaults to 5)
-  #
-  # Examples
-  #   => uploader.upload!(20)
-  #     true
-  #   => uploader.upload!
-  #     true
-  #
-  # Returns true when finished the process
-  # This is probably no longer accurate now that there's a puts at the end
-  def upload!(thread_count = 5)
+  def upload!()
     file_number = 0
-    mutex       = Mutex.new
-    threads     = []
-    files       = Array.new @files
 
-    thread_count.times do |i|
-      threads[i] = Thread.new {
-        until files.empty?
-          mutex.synchronize do
-            file_number += 1
-            Thread.current['file_number'] = file_number
-          end
-          file = files.pop rescue nil
-          next unless file
+    total_files = @files.length
 
-          # I had some more manipulation here figuring out the git sha
-          # For the sake of the example, we'll leave it simple
-          #
-          path = file.gsub(/^#{folder_path}\//, '')
+    @files.each do |file|
+      file_number += 1
 
-          print "\rUploading... [#{Thread.current["file_number"]}/#{total_files}]"
+      print "\rUploading... [#{file_number}/#{total_files}]"
 
-          data = File.open file
+      next if File.directory? file
 
-          next if File.directory? data
-          options = { :acl => :public_read }
-          options[:content_type] ||=  MIME::Types.type_for(file).first
-          obj = s3_bucket.objects[path]
-          obj.write(data, options)
-        end
-      }
+      # Get the path relative to containing directory
+      path = file.gsub(/^#{@folder_path}\//, '')
+
+      options = { :acl => "authenticated-read" }
+
+      if MIME::Types.type_for(file).count > 0
+        options[:content_type] = MIME::Types.type_for(file).first.to_str
+      end
+
+      @s3_bucket.object(path).upload_file(file, options)
     end
-    threads.each { |t| t.join }
+
     puts "\rUpload complete!".ljust 80
   end
 
   # Delete files from S3 not included in path
   def cleanup!
-    s3_bucket.objects.each do |obj|
-      if !files.include? "#{folder_path}/#{obj.key}"
+    @s3_bucket.objects.each do |obj|
+      if !@files.include? "#{@folder_path}/#{obj.key}"
         puts "Deleting #{obj.key}"
         obj.delete
       end
@@ -104,11 +78,8 @@ end
 options = {
   :bucket     => ENV['BUCKET'],
   :build_dir  => 'build',
-  :threads    => 8,
-  :force      => false,
-  :branch     => 'master',
-  :aws_key    => ENV['AWS_KEY'],
-  :aws_secret => ENV['AWS_SECRET']
+  :aws_key    => ENV['AWS_ACCESS_KEY_ID'],
+  :aws_secret => ENV['AWS_SECRET_ACCESS_KEY']
 }
 
 parser = OptionParser.new do |opts|
@@ -120,24 +91,12 @@ parser = OptionParser.new do |opts|
     options[:build_dir] = o
   end
 
-  opts.on('-B', '--branch=BRANCH', "Checkout specified branch before building (Default: \"#{options[:branch]}\")") do |br|
-    options[:branch] = br
-  end
-
   opts.on('-k', '--aws_key=KEY', "AWS Upload Key (Required, default: \"#{options[:aws_key]}\")") do |k|
     options[:aws_key] = k
   end
 
   opts.on('-s', '--aws_secret=SECRET', "AWS Upload Secret (Required, default: \"#{options[:aws_secret]}\")") do |s|
     options[:aws_secret] = s
-  end
-
-  opts.on('-t', '--threads=THREADS', Integer, "Number of threads to use for uploading (Default: #{options[:threads]})") do |t|
-    options[:threads] = t
-  end
-
-  opts.on('-f', '--force', "Force deployment, even if the working directory is not clean") do |f|
-    options[:force] = f
   end
 
   opts.on_tail('-h', '--help', 'Display this help') do
@@ -153,20 +112,8 @@ if options[:bucket] == nil || options[:aws_key] == nil || options[:aws_secret] =
   exit
 end
 
-# Make sure repository is clean before doing build
-repo = Git.open '.'
-
-# Save previous branch and checkout specified branch from options
-original_branch = repo.current_branch
-repo.checkout(options[:branch])
-
-unless options[:force]
-  [:added, :changed, :deleted, :untracked].each do |s|
-    abort 'Repository status is not clean!' unless repo.status.send(s).empty?
-  end
-end
-
 # Build book
+abort 'Failed to install book requirements' unless system 'gitbook', 'install', 'book'
 abort 'Failed to build book!' unless system 'gitbook', 'build', 'book', options[:build_dir], '--format', 'website'
 
 # Strip double slashes
@@ -187,14 +134,8 @@ end
 
 # Deploy
 uploader = S3FolderUpload.new(options[:build_dir], options[:bucket], options[:aws_key], options[:aws_secret])
-uploader.upload! options[:threads]
+uploader.upload!
 uploader.cleanup!
 
 # Cleanup build directory
-FileUtils.remove_entry_secure options[:build_dir]
-
-# Tag with bucket name & date deployed.
-repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"), {:f => true})
-
-# Switch back to the original branch
-repo.checkout(original_branch)
+FileUtils.remove_dir options[:build_dir]
