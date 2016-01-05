@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'dotenv'
-
 require 'optparse'
 
 require 'rubygems'
@@ -10,8 +8,13 @@ require 'bundler/setup'
 require 'aws-sdk'
 require 'mime/types'
 
-# Load env values first!
-Dotenv.load
+begin
+  # Load env values first!
+  require 'dotenv'
+  Dotenv.load
+rescue LoadError
+  puts "No dot env; we must be in production."
+end
 
 class S3FolderUpload
   # Initialize the upload class
