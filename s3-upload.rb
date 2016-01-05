@@ -28,6 +28,8 @@ class S3FolderUpload
   #   => uploader = S3FolderUpload.new("some_route/test_folder", 'your_bucket_name')
   #
   def initialize(folder_path, bucket, aws_key = ENV['AWS_ACCESS_KEY_ID'], aws_secret = ENV['AWS_SECRET_ACCESS_KEY'])
+    raise IOError, 'Invalid upload directory specified' unless File.directory? folder_path
+
     @folder_path = folder_path
     @files       = Dir.glob "#{@folder_path}/**/{*,.*}"
     @connection  = Aws::S3::Resource.new(access_key_id: aws_key, secret_access_key: aws_secret, region: 'us-east-1')
@@ -86,7 +88,7 @@ parser = OptionParser.new do |opts|
     options[:bucket] = b
   end
 
-  opts.on('-d', '--dir=DIRECTORY', "Directory to upload") do |d|
+  opts.on('-d', '--dir=DIRECTORY', "Directory to upload (Required)") do |d|
     options[:upload_dir] = d
   end
 
