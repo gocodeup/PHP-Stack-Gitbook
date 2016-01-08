@@ -208,6 +208,7 @@
 * [Appendix A: Code Standards](content/appendix/code-standards.md)
     * [Variables Functions & Classes](content/appendix/variable-function-class.md)
     * [Control Structures](content/appendix/control-structures.md)
+    * [Documentation](content/appendix/documentation.md)
     * [Other Languages](content/appendix/other-languages.md)
 * [Appendix B: Postwork](content/postwork/index.md)
     * [Coding Challenges](content/postwork/basic_challenges/index.md)
