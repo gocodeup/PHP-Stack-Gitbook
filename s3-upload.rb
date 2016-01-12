@@ -37,7 +37,7 @@ class S3FolderUpload
   end
 
   # public: Upload files from the folder to S3
-  def upload!()
+  def upload!(acl)
     file_number = 0
 
     total_files = @files.length
@@ -52,7 +52,7 @@ class S3FolderUpload
       # Get the path relative to containing directory
       path = file.gsub(/^#{@folder_path}\//, '')
 
-      options = { :acl => "authenticated-read" }
+      options = { :acl => acl }
 
       if MIME::Types.type_for(file).count > 0
         options[:content_type] = MIME::Types.type_for(file).first.to_str
@@ -78,6 +78,7 @@ end
 # Parse CLI Options
 options = {
   :bucket     => ENV['BUCKET'],
+  :bucket_acl => ENV['BUCKET_ACL'],
   :upload_dir => '',
   :aws_key    => ENV['AWS_ACCESS_KEY_ID'],
   :aws_secret => ENV['AWS_SECRET_ACCESS_KEY']
@@ -86,6 +87,10 @@ options = {
 parser = OptionParser.new do |opts|
   opts.on('-b', '--bucket=BUCKET', "S3 Bucket to deploy to (Required, default: \"#{options[:bucket]}\")") do |b|
     options[:bucket] = b
+  end
+
+  opts.on('-a', '--acl=ACL_NAME', "S3 ACL to apply to all objects (Required, default: \"#{options[:bucket_acl]}\")") do |a|
+    options[:bucket_acl] = a
   end
 
   opts.on('-d', '--dir=DIRECTORY', "Directory to upload (Required)") do |d|
@@ -115,5 +120,5 @@ end
 
 # Deploy
 uploader = S3FolderUpload.new(options[:upload_dir], options[:bucket], options[:aws_key], options[:aws_secret])
-uploader.upload!
+uploader.upload! options[:bucket_acl]
 uploader.cleanup!
