@@ -1,6 +1,8 @@
-# Codeup Sample Gitbook
+# PHP Stack Gitbook
 
-The purpose of this repository is to give us a common set of tools and standards for writing Gitbooks. It is intended to be used as a base repository that all our actual books can fork and add content to. This way we can all use the same basic set of utilities and features across the board.
+[![Codeship Status for gocodeup/PHP-Stack-Gitbook](https://codeship.com/projects/9a9694c0-9c3d-0133-5089-6a6b57a3cbcb/status?branch=master)](https://codeship.com/projects/127054)
+
+This repository contains the control and presentation layer code for our PHP stack curriculum. The raw content is stored in the private [Curriculum repository](/gocodeup/Curriculum).
 
 ## Initial Setup
 
