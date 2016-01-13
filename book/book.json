@@ -22,5 +22,8 @@
     },
     "variables": {
         "curriculumName": "php-stack"
+    },
+    "search": {
+        "maxIndexSize": 1000000000
     }
 }
