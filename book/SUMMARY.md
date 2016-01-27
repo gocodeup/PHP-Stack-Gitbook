@@ -26,6 +26,7 @@
     * [Adding Files](content/git/adding-files.md)
     * [Committing](content/git/committing.md)
     * [Pushing and Pulling](content/git/pushing-and-pulling.md)
+    * [Ignoring Files](content/git/gitignore-file.md)
 * [JavaScript](content/javascript/index.md)
     * [Primitive Types](content/javascript/primitive-types/README.md)
         * [Booleans](content/javascript/primitive-types/booleans.md)
