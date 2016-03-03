@@ -22,11 +22,7 @@ Once you have node installed, install `gitbook-cli` using `npm` (depending on yo
 npm install -g gitbook-cli
 ```
 
-With `gitbook-cli` installed, you will need to install the latest version of Gitbook itself. As of this writing, that is version 2.6.6. To do this, run:
-
-```bash
-gitbook versions:install latest
-```
+The Gitbook CLI utility can automatically install the necessary version of Gitbook whenever we try to manipulate a particular book. This is done whether you're installing dependencies, serving the preview, or compiling the book for distribution. The Gitbook version is specified in `book/book.json` and is currently set to `~2.6`.
 
 Now that you have the Gitbook software, you will need to install the plugins for this book. Although they are tracked in NPM, Gitbook is happier when it gets to manage those dependencies itself. To install them, run:
 
@@ -35,7 +31,7 @@ Now that you have the Gitbook software, you will need to install the plugins for
 gitbook install book
 ```
 
-Finally, the deployment script is written in Ruby and requires a couple of gems to run. You can install these using Bundler:
+Finally, the deployment script is written in Ruby and requires a couple of gems to run. Most people will not need to worry about deploying the books, but if necessary you can install these using Bundler:
 
 ~~~bash
 bundle install
@@ -106,7 +102,38 @@ We use Amazon S3 to host the rendered Gitbook and [Codeship](https://codeship.co
 
     Usage: s3-upload [options]
         -b, --bucket=BUCKET              S3 Bucket to deploy to (Required, default: $BUCKET)
+        -a, --acl=ACL_NAME               S3 ACL to apply to all objects (Required, default: $BUCKET_ACL)
         -d, --dir=DIRECTORY              Directory to upload (Required)
         -k, --aws_key=KEY                AWS Upload Key (Required, default: $AWS_ACCESS_KEY_ID)
         -s, --aws_secret=SECRET          AWS Upload Secret (Required, default: $AWS_SECRET_ACCESS_KEY)
         -h, --help                       Display this help
+
+Setting up Codeship takes a few steps.
+
+1. This repository will need to be linked as a project in Codeship. This should be relatively straight forward through their interface.
+1. There needs to be a custom setup script created. The current iteration is as follows:
+
+    ```bash
+    # You can use nvm to install any Node.js (or io.js) version you require.
+    nvm install 5.7
+    npm install -g gitbook-cli@2.0.1
+    gitbook install book
+    gitbook build book build
+    ```
+    
+    There are no test commands for our Gitbooks
+1. Set up a new deployment branch, we typically use `production`. Use another custom script to deploy to S3:
+
+    ```bash
+    bundle install --without development
+    ./s3-upload.rb -d build -b [your bucket name] -a [bucket-acl]
+    ```
+    
+    Typically the bucket name is the same as the production domain name. The bucket ACL is typically either `public-read` or `authenticated-read`, depending on whether you are putting an authentication layer on top of this Gitbook.
+1. You should set up `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables for authentication with Amazon.
+1. Codeship will automatically set up a deployment key with in the repository. Unfortunately, because we are using submodules for most of our content this doesn't work for us.
+    1. Go to this repository's settings and delete the Codeship deployment key.
+    1. Go to the Codeship project general settings and copy the SSH public key.
+    1. Log in to the `instructors@codeup.com` GitHub account, go to the account settings, and add the Codeship key there. Now both this repository and its submodules can be accessed by Codeship.
+
+Obviously, there are some steps necessary for configuring Amazon S3 along with all this. That...is beyond the scope of this document however.

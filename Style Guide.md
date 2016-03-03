@@ -64,6 +64,8 @@
     - jQuery (even for titles)
     - JSON
     - PHP
+    - Either PHPDoc or phpDoc
+    - phpDocumentor
 
     Incorrect:
 
