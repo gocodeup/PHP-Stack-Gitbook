@@ -110,6 +110,7 @@ Setting up Codeship takes a few steps.
 
 1. This repository will need to be linked as a project in Codeship. This should be relatively straight forward through their interface.
 1. There needs to be a custom setup script created. The current iteration is as follows:
+
     ```bash
     # You can use nvm to install any Node.js (or io.js) version you require.
     nvm install 5.7
@@ -117,12 +118,15 @@ Setting up Codeship takes a few steps.
     gitbook install book
     gitbook build book build
     ```
+    
     There are no test commands for our Gitbooks
 1. Set up a new deployment branch, we typically use `production`. Use another custom script to deploy to S3:
+
     ```bash
     bundle install --without development
     ./s3-upload.rb -d build -b [your bucket name] -a [bucket-acl]
     ```
+    
     Typically the bucket name is the same as the production domain name. The bucket ACL is typically either `public-read` or `authenticated-read`, depending on whether you are putting an authentication layer on top of this Gitbook.
 1. You should set up `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables for authentication with Amazon.
 1. Codeship will automatically set up a deployment key with in the repository. Unfortunately, because we are using submodules for most of our content this doesn't work for us.
