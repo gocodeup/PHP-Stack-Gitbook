@@ -1,7 +1,7 @@
 {
     "title": "Sample Gitbook",
     "description": "Sample Gitbook to use as a base for additional book development",
-    "gitbook": ">=2.3.2",
+    "gitbook": "~2.6",
     "plugins":[
         "scrollablecode",
         "jsbin",
