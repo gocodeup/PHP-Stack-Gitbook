@@ -20,6 +20,3 @@ DEPENDENCIES
   aws-sdk (~> 2.0)
   dotenv (~> 2.0)
   mime-types (~> 3.0)
-
-BUNDLED WITH
-   1.10.6
