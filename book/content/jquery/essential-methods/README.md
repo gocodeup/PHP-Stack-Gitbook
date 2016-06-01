@@ -1,0 +1,1 @@
+# Essential jQuery Methods

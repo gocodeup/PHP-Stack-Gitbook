@@ -1,0 +1,800 @@
+---
+- account_id: GLOBAL
+  id: +DXlqEhW5BGBijCi5e_u6A
+  location:
+    n: -122.335928552
+    t: 47.611904235
+  notes: http://spotcrime.com/crime/55227541-3e3e4ffb3f008861a4109293ad9aa7c3
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: +EzhrkhW5BGBijCi5e_u6A
+  location:
+    n: -9.47099
+    t: 8.54351
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: +JTuqUhW5BGBijCi5e_u6A
+  location:
+    t: 47.601302764
+    n: -122.334180056
+  notes: http://spotcrime.com/crime/55227518-5e8a2695942825bd7edddabd9df69244
+  report_type: Vandalism
+
+- account_id: GLOBAL
+  id: 0ngCpkhW5BGBijCi5e_u6A
+  location:
+    n: -87.624382058
+    t: 41.886365607
+  notes: http://spotcrime.com/crime/55164061-3c1f92666c386714edab99efc799d4ba
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: 1vT_tEhW5BGBijCi5e_u6A
+  location:
+    n: -8.86028
+    t: 6.49222
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 2qv_lUhW5BGBijCi5e_u6A
+  location:
+    n: -122.325007868
+    t: 47.610872898
+  notes: http://spotcrime.com/crime/55227529-5a62374fe4d20bac7959c1ba823153bc
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: 4GSUoUhW5BGBijCi5e_u6A
+  location:
+    n: -87.626197015
+    t: 41.876637482
+  notes: http://spotcrime.com/crime/55176903-2229723e5df659bfe16693d076ae619b
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: 4M5npUhW5BGBijCi5e_u6A
+  location:
+    n: -87.628082334
+    t: 41.885504746
+  notes: http://spotcrime.com/crime/55163998-81617c059746b4cdc98c073e00079d58
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: 4o94uEhW5BGBijCi5e_u6A
+  location:
+    n: -13.33333
+    t: 10.91667
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 5Aatl0hW5BGBijCi5e_u6A
+  location:
+    t: 5.25
+    n: -7.91667
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 6NgBhkhW5BGBijCi5e_u6A
+  location:
+    n: -87.624375653
+    t: 41.885948443
+  notes: http://spotcrime.com/crime/55227074-9808083d0e62a28913cc1e18c98cc8b4
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: 6hV7tEhW5BGBijCi5e_u6A
+  location:
+    t: 9.11667
+    n: -12.91667
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 7MPks0hW5BGBijCi5e_u6A
+  location:
+    n: -9.30791
+    t: 6.44809
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 7NJlg0hW5BGBijCi5e_u6A
+  location:
+    t: 41.87816336
+    n: -87.638800776
+  notes: http://spotcrime.com/crime/55226653-b4659479865d499af1caf5a8687d5b54
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: 7pU1rUhW5BGBijCi5e_u6A
+  location:
+    n: -122.336938537
+    t: 47.612168778
+  notes: http://spotcrime.com/crime/55227299-5f563af8b069a74ef53bc21a02cb9f98
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: 7sPmoEhW5BGBijCi5e_u6A
+  location:
+    t: 41.883480076
+    n: -87.627730028
+  notes: http://spotcrime.com/crime/55176855-415bcacbf53fd16441324e876c5ead5b
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: 8HSgsUhW5BGBijCi5e_u6A
+  location:
+    t: 8.56744
+    n: -10.1336
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 8tthoEhW5BGBijCi5e_u6A
+  location:
+    n: -87.634139592
+    t: 41.884359018
+  notes: http://spotcrime.com/crime/55176840-77ae2306829904a8516adf4188a961f9
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: 9EMOmUhW5BGBijCi5e_u6A
+  location:
+    n: 6
+    t: 5.5
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 9F8qrEhW5BGBijCi5e_u6A
+  location:
+    n: -122.338146745
+    t: 47.610975162
+  notes: http://spotcrime.com/crime/55227363-0d687ed9d6452c9a71c37c326f703cb2
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: 9nYpnkhW5BGBijCi5e_u6A
+  location:
+    n: -13.67729
+    t: 9.53795
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: 9nnLo0hW5BGBijCi5e_u6A
+  location:
+    n: -87.635957455
+    t: 41.884353606
+  notes: http://spotcrime.com/crime/55177131-31b856964e4ed55c02613ebb61d1ec2a
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: 9oantUhW5BGBijCi5e_u6A
+  location:
+    n: -11.10879
+    t: 10.74817
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: Aqw5u0hW5BGBijCi5e_u6A
+  location:
+    t: 6.36667
+    n: -10.78333
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: BJTEjEhW5BGBijCi5e_u6A
+  location:
+    t: 41.877469596
+    n: -87.629422817
+  notes: http://spotcrime.com/crime/55201678-c92bff84f8bb4a9af017126e102fc6f7
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: CFmemUhW5BGBijCi5e_u6A
+  location:
+    t: 13.872402
+    n: -13.347808
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: CkgoukhW5BGBijCi5e_u6A
+  location:
+    n: -13.234167
+    t: 8.49
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: DqX5kUhW5BGBijCi5e_u6A
+  location:
+    t: 41.879299967
+    n: -87.631209374
+  notes: http://spotcrime.com/crime/55202380-740b93a785810fe6e85aa20c394c8318
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: EBOth0hW5BGBijCi5e_u6A
+  location:
+    n: -87.636573853
+    t: 41.880010468
+  notes: http://spotcrime.com/crime/55227208-c39b1ac2a6da9fec6e3d7bce911a62b4
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: FBEDikhW5BGBijCi5e_u6A
+  location:
+    n: -87.62451848
+    t: 41.882329671
+  notes: http://spotcrime.com/crime/55227461-f679d07196a16204b58fb035c15126f5
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: FpdmlEhW5BGBijCi5e_u6A
+  location:
+    n: -87.629064559
+    t: 41.87464906
+  notes: http://spotcrime.com/crime/55176734-eac61ad47b9166292b38d50c00b7ae38
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: GK1rqUhW5BGBijCi5e_u6A
+  location:
+    n: -122.340925196
+    t: 47.609813946
+  notes: http://spotcrime.com/crime/55227540-5688c43208ba7039a6df69c9936ac116
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: Hm7ZiEhW5BGBijCi5e_u6A
+  location:
+    n: -87.624195071
+    t: 41.880692106
+  notes: http://spotcrime.com/crime/55227359-ae1ff4fa9025144c7f360034e1d1980e
+  report_type: Theft
+
+- account_id: GLOBAL
+  report_type: Theft
+  location:
+    n: -122.333887751
+    t: 47.607158145
+  id: JgZLrkhW5BGBijCi5e_u6A
+  notes: http://spotcrime.com/crime/55227242-55368ea85fdbb2cdc88ba06dda8a2521
+
+- account_id: GLOBAL
+  id: JsCfi0hW5BGBijCi5e_u6A
+  location:
+    t: 41.87884558
+    n: -87.630949963
+  notes: http://spotcrime.com/crime/55201464-6e7a2ab5de6bcff7fca8895d0d3a6a60
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: MA03tkhW5BGBijCi5e_u6A
+  location:
+    t: 11.3
+    n: -10.716667
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: MOZ5lUhW5BGBijCi5e_u6A
+  location:
+    t: 41.878205077
+    n: -87.620528558
+  notes: http://spotcrime.com/crime/55163964-1805de446ea525bb733664f8565b2c30
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: MpwNvUhW5BGBijCi5e_u6A
+  location:
+    n: -10.804722
+    t: 6.310556
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: NttpkUhW5BGBijCi5e_u6A
+  location:
+    n: -87.62443557
+    t: 41.876873605
+  notes: http://spotcrime.com/crime/55202358-0daa2fa5e6d9ada832e7ab4825609996
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: NvcZsUhW5BGBijCi5e_u6A
+  location:
+    t: 9.509167
+    n: -13.712222
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: OE0KuUhW5BGBijCi5e_u6A
+  location:
+    n: -10.56667
+    t: 8.28333
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: Og8yjEhW5BGBijCi5e_u6A
+  location:
+    t: 41.88029672
+    n: -87.629512969
+  notes: http://spotcrime.com/crime/55201593-f740b66e15972b58f0b0eb98976d9f23
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: PD3qlEhW5BGBijCi5e_u6A
+  location:
+    t: 41.881904793
+    n: -87.628162317
+  notes: http://spotcrime.com/crime/55177363-b4f8762626e9d45827f521ddbe2508c6
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: PMy7p0hW5BGBijCi5e_u6A
+  location:
+    n: -87.630800107
+    t: 41.884816135
+  notes: http://spotcrime.com/crime/55164284-070c24cc8eb3a25006ad646f213508de
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: QGySlkhW5BGBijCi5e_u6A
+  location:
+    n: -122.33683772
+    t: 47.612897738
+  notes: http://spotcrime.com/crime/55227161-93762bb3a92f0ba71750daaae8a57e6d
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: QlPFu0hW5BGBijCi5e_u6A
+  location:
+    n: -10.2167
+    t: 8.36667
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: RBD+qkhW5BGBijCi5e_u6A
+  location:
+    t: 47.609655035
+    n: -122.333098119
+  notes: http://spotcrime.com/crime/55227439-ba2fa325ace95362150a842480267c6f
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: SLS4okhW5BGBijCi5e_u6A
+  location:
+    n: -87.627730028
+    t: 41.883480076
+  notes: http://spotcrime.com/crime/55177007-ec878232a160d42e962668f2da78f047
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: TFCNsEhW5BGBijCi5e_u6A
+  location:
+    n: -11.79192
+    t: 8.56028
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: TK+4nkhW5BGBijCi5e_u6A
+  location:
+    t: 41.876261544
+    n: -87.624420303
+  notes: http://spotcrime.com/crime/55176744-ccc89fd4297c7479ce50f535fd660cdd
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: TsDMn0hW5BGBijCi5e_u6A
+  location:
+    n: -87.627868323
+    t: 41.879921644
+  notes: http://spotcrime.com/crime/55176830-f02accb071fa5d4bb7689323da6faaef
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: Ttuyj0hW5BGBijCi5e_u6A
+  location:
+    t: 41.883480076
+    n: -87.627730028
+  notes: http://spotcrime.com/crime/55202105-7ac95eb29f5a6db03a6ba01405b27ddd
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: VLhur0hW5BGBijCi5e_u6A
+  location:
+    n: -10.94177
+    t: 10.43821
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: WLQInUhW5BGBijCi5e_u6A
+  location:
+    t: -0.65847
+    n: 20.60705
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: Wk1Jo0hW5BGBijCi5e_u6A
+  location:
+    t: 41.879426121
+    n: -87.624495488
+  notes: http://spotcrime.com/crime/55177028-d9023998c1d510e7b0252bd1115d744e
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: Ws9VjUhW5BGBijCi5e_u6A
+  location:
+    t: 41.878049768
+    n: -87.627819143
+  notes: http://spotcrime.com/crime/55201757-ad6a34ec461df16aeb7de4ed2d466701
+  report_type: Robbery
+
+- account_id: GLOBAL
+  id: XHuIhEhW5BGBijCi5e_u6A
+  location:
+    n: -87.631084116
+    t: 41.884367816
+  notes: http://spotcrime.com/crime/55226959-c73efe4682a705f8a087189f3d1cd6fe
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: XteZq0hW5BGBijCi5e_u6A
+  location:
+    t: 47.612368448
+    n: -122.334817763
+  notes: http://spotcrime.com/crime/55227386-16ac7bb056a94dc971117457287ed03b
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: YHODnEhW5BGBijCi5e_u6A
+  location:
+    n: 20.563259
+    t: -0.8435
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: YPpFt0hW5BGBijCi5e_u6A
+  location:
+    n: -9.666667
+    t: 7
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: ZP_mt0hW5BGBijCi5e_u6A
+  location:
+    n: -8.75
+    t: 6.75
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: ZtRMhUhW5BGBijCi5e_u6A
+  location:
+    n: -87.637067181
+    t: 41.878202259
+  notes: http://spotcrime.com/crime/55227068-f1b84bfe9a61d36b4f4770cd5f853fb3
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: _p4cj0hW5BGBijCi5e_u6A
+  location:
+    t: 41.882548676
+    n: -87.627997331
+  notes: http://spotcrime.com/crime/55202064-756c4ac25edaba7f9bc954b73dddfecf
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: _uripEhW5BGBijCi5e_u6A
+  location:
+    t: 41.880978219
+    n: -87.627875062
+  notes: http://spotcrime.com/crime/55202533-5a12ccdfb285105f5510f8f5f008ac5b
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: _v6ZnUhW5BGBijCi5e_u6A
+  location:
+    t: -0.44219
+    n: 20.775459
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: agDnjUhW5BGBijCi5e_u6A
+  location:
+    n: -87.633604773
+    t: 41.87885081
+  notes: http://spotcrime.com/crime/55201847-7dfd7a2a73fc3bc8ca0e8e5973cc6d72
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: alF8iUhW5BGBijCi5e_u6A
+  location:
+    n: -87.631710548
+    t: 41.885850791
+  notes: http://spotcrime.com/crime/55227441-01e6e3da0adecd5c4fabbcba9c9ad339
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: bP9_vEhW5BGBijCi5e_u6A
+  location:
+    n: -10.84056
+    t: 7.99194
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: dECWikhW5BGBijCi5e_u6A
+  location:
+    n: -87.635569437
+    t: 41.884576277
+  notes: http://spotcrime.com/crime/55227516-e637b1508341284706cb0c89b23b54c3
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: dNOyskhW5BGBijCi5e_u6A
+  location:
+    n: -10.09987
+    t: 9.1848
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: dj2VuUhW5BGBijCi5e_u6A
+  location:
+    n: -10.33861
+    t: 8.46333
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: elB5qkhW5BGBijCi5e_u6A
+  location:
+    t: 47.614288791
+    n: -122.333505552
+  notes: http://spotcrime.com/crime/55227494-d9112ab6b39e0d75d920972e9199b227
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: fFWUpkhW5BGBijCi5e_u6A
+  location:
+    n: -87.62779619
+    t: 41.876798252
+  notes: http://spotcrime.com/crime/55164225-84b83cd6fbed4b5f7124d427530719a6
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: fk_9r0hW5BGBijCi5e_u6A
+  location:
+    t: 8.28028
+    n: -10.37194
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: fqM8n0hW5BGBijCi5e_u6A
+  location:
+    n: -87.6340082
+    t: 41.883274242
+  notes: http://spotcrime.com/crime/55176754-c0c5a42c453b248d245c4a9e88559e0a
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: fqUjp0hW5BGBijCi5e_u6A
+  location:
+    t: 41.878014064
+    n: -87.633195297
+  notes: http://spotcrime.com/crime/55164232-d158e45f39d202cca1951052d2ca9333
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: ggNsjkhW5BGBijCi5e_u6A
+  location:
+    n: -87.628020631
+    t: 41.883435209
+  notes: http://spotcrime.com/crime/55201922-c5a7d3d6789855eb10618ecb2f20467f
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: iAJWs0hW5BGBijCi5e_u6A
+  location:
+    t: 7.916667
+    n: -10
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: ihYgl0hW5BGBijCi5e_u6A
+  location:
+    t: 5.916667
+    n: -8.083333
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: kCDhk0hW5BGBijCi5e_u6A
+  location:
+    t: 41.875168926
+    n: -87.627472632
+  notes: http://spotcrime.com/crime/55176731-46a556bed26f2b0a1bf76136e48b94d8
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: kMOKkkhW5BGBijCi5e_u6A
+  location:
+    n: -87.625760114
+    t: 41.88561944
+  notes: http://spotcrime.com/crime/55176641-36f4662ef7cd15cf853895cd8cb63ff0
+  report_type: Vandalism
+
+- account_id: GLOBAL
+  id: ku0ck0hW5BGBijCi5e_u6A
+  location:
+    t: 41.884603381
+    n: -87.624313404
+  notes: http://spotcrime.com/crime/55176675-eb103935d43c33423686e596361b90ef
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: nByRhkhW5BGBijCi5e_u6A
+  location:
+    n: -87.626292583
+    t: 41.879626552
+  notes: http://spotcrime.com/crime/55227180-f6427d3157d8b1ccabb7c3e84f1c5511
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: oATXkEhW5BGBijCi5e_u6A
+  location:
+    n: -87.626184102
+    t: 41.876143439
+  notes: http://spotcrime.com/crime/55202246-bdc754b1a47448040cd899f4aec348c1
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: oMseh0hW5BGBijCi5e_u6A
+  location:
+    n: -87.627741696
+    t: 41.883754572
+  notes: http://spotcrime.com/crime/55227200-a25bbedc395d8d858218228af9d1b146
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: orzzm0hW5BGBijCi5e_u6A
+  location:
+    n: 4.56667
+    t: 7.46667
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: pOFapEhW5BGBijCi5e_u6A
+  location:
+    t: 41.878524603
+    n: -87.627832281
+  notes: http://spotcrime.com/crime/55177146-ca0f8db0a1370795734f851fe8754a37
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: qABKiEhW5BGBijCi5e_u6A
+  location:
+    n: -87.634678154
+    t: 41.876722323
+  notes: http://spotcrime.com/crime/55227279-eafc6a1a5c29610f7c46128eba6ff659
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: qPIBhEhW5BGBijCi5e_u6A
+  location:
+    t: 41.871676708
+    n: -87.627668935
+  notes: http://spotcrime.com/crime/55226735-b2d8e27b5af21da2f1482d9ba003faf2
+  report_type: Robbery
+
+- account_id: GLOBAL
+  id: sMoai0hW5BGBijCi5e_u6A
+  location:
+    n: -87.620729213
+    t: 41.874356148
+  notes: http://spotcrime.com/crime/55201077-3ad158e4e17595c6e977d48b74c2d944
+  report_type: Assault
+
+- account_id: GLOBAL
+  id: tOasukhW5BGBijCi5e_u6A
+  location:
+    t: 10.16667
+    n: -14.03333
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: uCFOqEhW5BGBijCi5e_u6A
+  location:
+    n: -122.338906796
+    t: 47.60928404
+  notes: http://spotcrime.com/crime/55227572-4d8a798a406a58f101eaa5b8beddc4f7
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: uH0kskhW5BGBijCi5e_u6A
+  location:
+    t: 7.733333
+    n: -8.833333
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  location:
+    t: 6.5
+    n: -10.25
+  report_type: Outbreak
+  notes: http://healthmap.org/ebola/
+  id: uMXDtkhW5BGBijCi5e_u6A
+
+- account_id: GLOBAL
+  id: xoglokhW5BGBijCi5e_u6A
+  location:
+    n: -87.62779619
+    t: 41.876798252
+  notes: http://spotcrime.com/crime/55176917-64acfa75a3c0aeddf04365dd16073f53
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: zPm7rUhW5BGBijCi5e_u6A
+  location:
+    n: -122.336938537
+    t: 47.612168778
+  notes: http://spotcrime.com/crime/55227303-214cf2dcea8b6083acb1470c9e41f647
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: zgW5rEhW5BGBijCi5e_u6A
+  location:
+    n: -122.329469068
+    t: 47.613233613
+  notes: http://spotcrime.com/crime/55227358-c299b9b72d7299545fdd19674c244ef9
+  report_type: Theft
+
+- account_id: GLOBAL
+  id: zj7DgkhW5BGBijCi5e_u6A
+  location:
+    t: 41.877549687
+    n: -87.624152703
+  notes: http://spotcrime.com/crime/55226625-edc8d6ec13e3c4cd8eb4df59849e9f28
+  report_type: Arrest
+
+- account_id: GLOBAL
+  id: zks8mEhW5BGBijCi5e_u6A
+  location:
+    n: 6.728466
+    t: 6.197843
+  notes: http://healthmap.org/ebola/
+  report_type: Outbreak
+
+- account_id: GLOBAL
+  id: zmBDkEhW5BGBijCi5e_u6A
+  location:
+    n: -87.627643838
+    t: 41.885639264
+  notes: http://spotcrime.com/crime/55202206-f5db83c1477bb75d5e33dd582fb2db32
+  report_type: Theft

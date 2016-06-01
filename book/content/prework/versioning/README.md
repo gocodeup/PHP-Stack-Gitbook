@@ -1,0 +1,7 @@
+# Introduction
+
+Imagine you are working on a file (e.g. a video, a photo, or your resume) and you want to add some new material, but you do not want to risk losing all your previous hard work. What you would do is copy the file to a new name and then start working on it, right? Now you have `Filename (original).docx` and `Filename (Version 2).docx`. Then you want to add some thing else, so you create `Filename (new section).docx`. Two weeks later you need to send this file to someone else, so you dig through the directory, pull your changes together, and put them all into `Filename-FINAL.docx`. Sometime after that you need to add some more content so now you have `Filename-FINAL (Version 3).docx`, and the cycle continues.
+
+Now imagine you and a friend are working together on this file, how do you coordinate that? Do you eMail the whole file back and forth? Maybe you just send messages with what parts were changed where? If you are lucky, maybe you can use a service like Dropbox to actually share the files, but how do you keep track of what was changed and when? How would you keep track of what parts your friend changed and why?
+
+This is where version control comes in. Version control tracks changes in a file or group of files and stores those changes in a local database. Version control can then send changes in that database back and forth between two or more people so they can all keep track of what was changed, when, and by whom.
