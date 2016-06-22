@@ -75,7 +75,7 @@
         * [Ajax Intro](content/jquery/ajax/ajax-intro.md)
         * [Ajax API Request](content/jquery/ajax/ajax-api-request.md)
     * [Simple Simon Game](content/jquery/simple-simon/create-game.md)
-    * [Whack-A-Mole](content/jquery/whack-a-mole/create-game.md)
+    * [Personal Site](content/jquery/resume-portfolio/README.md)
 * [PHP I](content/php_i/index.md)
     * [Intro via Interactive Shell](content/php_i/intro-via-interactive-shell/README.md)
         * [Hello World and Other Strings](content/php_i/intro-via-interactive-shell/hello-world-and-other-strings.md)
