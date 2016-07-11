@@ -123,6 +123,7 @@
     * [Using Files](content/php_ii/using-files/README.md)
         * [Reading Files](content/php_ii/using-files/reading-files.md)
         * [Writing to Files](content/php_ii/using-files/writing-to-files.md)
+        * [Contacts Manager](content/php_ii/using-files/contacts-manager.md)
 * [PHP III](content/php_iii/README.md)
     * [PHP with HTML](content/php_iii/php-with-html/README.md)
         * [Alternative Syntax](content/php_iii/php-with-html/alternative-syntax.md)
