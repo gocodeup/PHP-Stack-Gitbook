@@ -1,3 +1,0 @@
-[submodule "book/content"]
-	path = book/content
-	url = git@github.com:gocodeup/Curriculum.git
