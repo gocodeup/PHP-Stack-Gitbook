@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-git add -A && git commit -m "update submodule"
-git submodule update --init --recursive
+rmdir book/content
+git add -A && git commit -m 'remove content dir' && echo 'book/content/ removed!'
+git submodule add git@github.com:gocodeup/Curriculum.git book/content
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
