@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [HTML and CSS](content/html-css/README.md)
-    * [Elements I](content/html-css/elements-i/index.md)
+    * [Elements I](content/html-css/elements-i/README.md)
         * [Headings](content/html-css/elements-i/headings.md)
         * [P And More](content/html-css/elements-i/paragraphs.md)
         * [Lists](content/html-css/elements-i/lists.md)
@@ -14,7 +14,7 @@
         * [Text & Textarea](content/html-css/forms-i/text-textarea.md)
         * [Checkbox Radio](content/html-css/forms-i/checkbox-radio.md)
         * [Select](content/html-css/forms-i/select.md)
-    * [CSS I](content/html-css/css-i/index.md)
+    * [CSS I](content/html-css/css-i/README.md)
         * [Basic Selectors](content/html-css/css-i/basic-selectors.md)
         * [Basic Properties](content/html-css/css-i/basic-properties.md)
         * [Box Model](content/html-css/css-i/box-model.md)
