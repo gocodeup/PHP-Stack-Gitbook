@@ -197,6 +197,7 @@
         * [Namespacing](content/laravel/quickstart/namespacing.md)
         * [Errors And Logging](content/laravel/quickstart/errors-and-logging.md)
         * [Composer](content/laravel/quickstart/composer.md)
+        * [Database Seedint](content/laravel/quickstart/seeders.md)
     * [More Features](content/laravel/more-features/readme.md)
         * [Mutators & Accessors](content/laravel/more-features/mutators.md)
         * [Model Relationships](content/laravel/more-features/db-relationships.md)
