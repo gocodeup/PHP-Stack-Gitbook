@@ -200,7 +200,7 @@
         * [Database Seeding](content/laravel/quickstart/seeders.md)
     * [More Features](content/laravel/more-features/readme.md)
         * [Authentication](content/laravel/more-features/authentication.md)
-	* [Mutators & Accessors](content/laravel/more-features/mutators.md)
+        * [Mutators & Accessors](content/laravel/more-features/mutators.md)
         * [Model Relationships](content/laravel/more-features/db-relationships.md)
         * [Query Builder](content/laravel/more-features/db-query-builder.md)
         * [Additional Features](content/laravel/more-features/even-more.md)
