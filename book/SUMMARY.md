@@ -203,7 +203,7 @@
         * [Mutators & Accessors](content/laravel/more-features/mutators.md)
         * [Model Relationships](content/laravel/more-features/db-relationships.md)
         * [Query Builder](content/laravel/more-features/db-query-builder.md)
-        * [Additional Features](content/laravel/more-features/even-more.md)
+        * [Additional Features](content/laravel/more-features/reddit.md)
     * [Deploying](content/laravel/more-features/deploying.md)
 * [Appendix A: Angular](content/angular/README.md)
     * [Expressions and Directives](content/angular/templating.md)
