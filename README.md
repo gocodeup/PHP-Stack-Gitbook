@@ -1,4 +1,4 @@
-# PHP Stack Gitbook
+# PHP Gitbook
 
 [![Codeship Status for gocodeup/PHP-Stack-Gitbook](https://codeship.com/projects/9a9694c0-9c3d-0133-5089-6a6b57a3cbcb/status?branch=master)](https://codeship.com/projects/127054)
 
