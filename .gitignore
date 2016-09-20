@@ -109,3 +109,4 @@ Temporary Items
 /book/_book
 /build
 .env
+/.idea/
