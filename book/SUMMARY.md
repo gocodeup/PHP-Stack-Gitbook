@@ -27,6 +27,8 @@
     * [Committing](content/git/committing.md)
     * [Pushing and Pulling](content/git/pushing-and-pulling.md)
     * [Ignoring Files](content/git/gitignore-file.md)
+    * [Branching](content/git/branching.md)
+    * [Teamwork](content/git/working-in-teams.md)
 * [JavaScript](content/javascript/README.md)
     * [Primitive Types](content/javascript/primitive-types/README.md)
         * [Booleans](content/javascript/primitive-types/booleans.md)
