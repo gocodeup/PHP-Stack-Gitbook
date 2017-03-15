@@ -162,6 +162,7 @@
         * [Executing Queries](content/php_iv/php-with-mysql/executing-queries.md)
         * [Query and Results](content/php_iv/php-with-mysql/query-and-results.md)
         * [Prepared Statements](content/php_iv/php-with-mysql/prepared-statements.md)
+        * [Build a Park Model](content/php_iv/php-with-mysql/create-a-park-model.md)
     * [Classes and Objects II](content/php_iv/classes-and-objects-ii/README.md)
         * [Inheritance](content/php_iv/classes-and-objects-ii/inheritance.md)
         * [Overriding](content/php_iv/classes-and-objects-ii/overriding.md)
