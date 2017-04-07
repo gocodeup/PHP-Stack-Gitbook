@@ -49,7 +49,6 @@
         * [Manipulating](content/javascript/arrays/manipulating.md)
         * [Split Join](content/javascript/arrays/split-join.md)
     * [Objects](content/javascript/objects/README.md)
-        * [JSON](content/javascript/objects/json.md)
         * [Math](content/javascript/objects/math.md)
     * [BOM and DOM](content/javascript/bom-and-dom/bom.md)
         * [Dom Query Modify](content/javascript/bom-and-dom/dom-query-modify.md)
