@@ -212,6 +212,7 @@
 		* [MySQL](content/appendix/code-standards/mysql.md)
 		* [PHP](content/appendix/code-standards/php.md)
 	* [Documentation](content/appendix/documentation/README.md)
+		* [PHP Doc](content/appendix/documentation/phpdoc.md)
 	* [Postwork](content/appendix/postwork/README.md)
 		* [General Coding Challenges](content/appendix/postwork/basic_challenges/README.md)
 		* [Website Status Page](content/appendix/postwork/website-status-page.md)
