@@ -1,21 +1,33 @@
 {
-    "name": "Codeup-LAMP-GitBook",
-    "description": "Codeup class curriculum for learning the LAMP + JavaScript stack",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gocodeup/lampj-gitbook.git"
-    },
-    "contributors": [
-        "Chris Turner <chris@codeup.com>",
-        "Jason Straughan <jason@codeup.com>",
-        "Ben Batschelet <ben@codeup.com>",
-        "Isaac Castillo <isaac@codeup.com>",
-        "Thomas Laffoon <thomas@codeup.com>"
-    ],
-    "license": "Proprietary",
-    "private": true,
-    "bugs": {
-        "url": "https://github.com/gocodeup/lampj-gitbook/issues"
-    },
-    "homepage": "https://github.com/gocodeup/lampj-gitbook"
+  "name": "Codeup-LAMP-GitBook",
+  "description": "Codeup class curriculum for learning the LAMP + JavaScript stack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gocodeup/lampj-gitbook.git"
+  },
+  "contributors": [
+    "Chris Turner <chris@codeup.com>",
+    "Jason Straughan <jason@codeup.com>",
+    "Ben Batschelet <ben@codeup.com>",
+    "Isaac Castillo <isaac@codeup.com>",
+    "Thomas Laffoon <thomas@codeup.com>"
+  ],
+  "license": "Proprietary",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/gocodeup/lampj-gitbook/issues"
+  },
+  "scripts": {
+    "install": "gitbook install book",
+    "serve": "gitbook serve book --no-live",
+    "build": "gitbook build book build"
+  },
+  "engines": {
+    "node": "7.7.1"
+  },
+  "homepage": "https://github.com/gocodeup/lampj-gitbook",
+  "dependencies": {
+    "gitbook": "^3.2.2",
+    "gitbook-cli": "^2.3.0"
+  }
 }

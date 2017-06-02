@@ -1,7 +1,6 @@
 {
     "title": "Codeup LAMP+J",
     "description": "This is the curriculum for Codeup's LAMP+J bootcamp",
-    "gitbook": "~2.6",
     "plugins":[
         "scrollablecode",
         "jsbin",
