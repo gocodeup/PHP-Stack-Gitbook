@@ -10,8 +10,7 @@
     "Jason Straughan <jason@codeup.com>",
     "Ben Batschelet <ben@codeup.com>",
     "Isaac Castillo <isaac@codeup.com>",
-    "Thomas Laffoon <thomas@codeup.com>",
-    "Zach Gulde <zach@codeup.com>"
+    "Thomas Laffoon <thomas@codeup.com>"
   ],
   "license": "Proprietary",
   "private": true,
@@ -21,7 +20,7 @@
   "scripts": {
     "install": "gitbook install book",
     "serve": "gitbook serve book --no-live",
-    "build": "gitbook build book build; cp -r book/content/examples build/"
+    "build": "gitbook build book build"
   },
   "engines": {
     "node": "7.7.1"
